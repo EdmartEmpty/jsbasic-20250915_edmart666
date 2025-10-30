@@ -62,7 +62,7 @@ export default class Carousel {
         
       if (target.closest('.carousel__button')) {
         let slide = target.closest('.carousel__slide');
-
+        console.log('ty');
         let event = new CustomEvent("product-add", { // имя события должно быть именно "product-add"
           detail: slide.dataset.id, // Уникальный идентификатора товара из объекта слайда
           bubbles: true // это событие всплывает - это понадобится в дальнейшем
@@ -73,6 +73,7 @@ export default class Carousel {
   goRigth() {
     this.index++; 
     this.transform();
+    // eslint-disable-next-line no-unused-expressions
     this.index === this.finalSlide - 1 ? this.arrowRight.style.display = "none" : this.arrowLeft.style.display = "";
   } 
   goLeft() {

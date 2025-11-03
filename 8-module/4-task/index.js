@@ -204,7 +204,6 @@ export default class Cart {
       body: dataForm,
     });
     if (response.ok) {
-      console.log('Hihihi');
       this.cartItems = [];
      
 

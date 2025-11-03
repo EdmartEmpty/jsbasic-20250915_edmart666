@@ -38,8 +38,6 @@ export default class Modal {
   escFunc(event) {
     if (event.code === "Escape") {
       this.close();
-      
-      console.log('hi');
     }
   }
 
